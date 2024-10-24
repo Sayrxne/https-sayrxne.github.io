@@ -1,0 +1,59 @@
+
+.hero {
+    background-color: lightpurple;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hero-clock {
+    width: 200px;
+    height: 200px;
+    background-image: url('clock-background.png');
+    background-size: cover;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+.hero-hand {
+    width: 10px;
+    height: 100px;
+    background-image: url('clock-hand.png');
+    background-size: contain;
+    position: absolute;
+    top: 50px;
+    left: 95px;
+    transform-origin: bottom;
+    animation-timing-function: linear;
+}
+
+
+.hero-hour {
+    animation: rotate-hour 43200s infinite; 
+}
+
+
+.hero-minute {
+    animation: rotate-minute 3600s infinite; 
+}
+
+
+@keyframes rotate-hour {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes rotate-minute {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
