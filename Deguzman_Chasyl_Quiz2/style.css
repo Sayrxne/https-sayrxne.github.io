@@ -1,0 +1,49 @@
+body{
+    background-color: slategray;
+}
+
+.frame{
+    border: 10px salmon;
+    height: 400px;
+
+}
+
+.wrapper{
+    width: 400%;
+    height: 100%;
+    border: 4px solid seagreen;
+    animation: slideshow 8s infinite;
+      
+}
+
+
+@keyframes slideshow {
+    0% {margin-left:0%;}
+    25% {margin-left:100%;}
+    50% {margin-left:200%;}
+    75% {margin-left:300%;}
+    100% {margin-left:300%;}
+
+}
+
+.wrapper>div{
+    width:25%;
+    border:12px solid lightcyan;
+    float:left;
+    height:100%;
+}
+
+.s1{
+    background-image: url('https://www.nintendo.com/eu/media/images/10_share_images/portals_3/2x1_SuperMarioHub_image1600w.jpg');
+    background-size:100% 100%;
+}
+
+.s2{
+    background-image: url('https://hard-drive.net/wp-content/uploads/2023/06/luigi-interview.jpg.webp');
+    background-size:100% 100%;
+}
+
+.s3{
+    background-image: url('https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/en_US/articles/2024/these-games-may-have-you-shouting-its-peach-time/2250x1266_Peach_1');
+    background-size:100% 100%;
+}
