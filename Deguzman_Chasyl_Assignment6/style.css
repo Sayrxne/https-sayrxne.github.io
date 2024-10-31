@@ -1,0 +1,64 @@
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://wallpapercave.com/wp/AqbHX5u.jpg'); 
+    background-size: cover;
+    display: flex;
+    position: relative;
+}
+
+.hero-clock {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 50%;
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-hand {
+    width: 10px;
+    height: 2%;
+    background-color: white;
+    position: absolute;
+    top: 50px; 
+    left: 95px; 
+    transform-origin: bottom;
+    animation-timing-function: linear;
+}
+
+
+.hero-hour {
+    height: 60px; 
+    animation: rotate-hour 4s infinite;
+}
+
+
+.hero-minute {
+    height: 60px; 
+    animation: rotate-minute 3s infinite;
+}
+
+
+@keyframes rotate-hour {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes rotate-minute {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
