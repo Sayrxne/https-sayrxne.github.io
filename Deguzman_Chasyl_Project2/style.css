@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    background-color: lightyellow;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Animations */
+header {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.icon {
+    font-size: 2rem;
+    animation: slideIn 2s ease-in-out forwards;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #556B2F;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1s forwards;
+}
+
+/* Hero Section with Slideshow */
+.hero {
+    border:10px solid rgb(211, 166, 93);
+    height: 400px;
+    overflow: hidden;
+}
+
+.slideshow {
+    width:400%;
+    height: 100%;
+    animation: slideshow 5s infinite;
+}
+
+.slideshow>div{
+    width: 25%;
+    border:12px soild green;
+    float:left;
+    height:100%;}
+
+.s1 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    flex-shrink: 0;
+}
+.s2 {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.text-block1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.text-block2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+/* Product and Gift Sections */
+
+.products, .gift-sets {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product, .gift {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product img, .gift img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.add-to-bag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #f9d342;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.add-to-bag:hover {
+    background-color: #f3c131;
+}
+
+.text-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: scaleUp 0.3s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.modal h2 {
+    color: #333;
+}
+
+.modal p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.modal-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #f9d342;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: #f3c131;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 200px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #f9d342;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    color: #f9d342;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.subscribe-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #f9d342;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #f9d342;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.social-links a:hover {
+    color: #fff;
+}
+
+.footer-copy {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { margin-left: -100%; }
+    to { margin-left: 0; }
+}
+
+@keyframes slideshow {
+    0% {  margin-left:0%;}
+    25% { margin-left:-100% ;}
+    50% { margin-left:-200% ;}
+    75% {margin-left:-300% ;}
+    100%{margin-left:-300% ;}
+}
+
+/* Add to Bag Hover Effect */
+.add-to-bag {
+    display: inline-block;
+    padding: 10px;
+    background-color: #f0c040;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-bag:hover {
+    background-color: gray;
+    color: white;
+}
+
+.add-to-bag::after {
+    content: "Add to Shopping Cart";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.9rem;
+    color: gray;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.add-to-bag:hover::after {
+    opacity: 1;
+}
+
+/* View Cart Section */
+.view-cart {
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
