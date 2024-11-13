@@ -66,4 +66,18 @@ class TestMainProgram(unittest.TestCase):
             mock_print.mock_calls
         )
     
+    #test_single_student
+
+    @patch('builtins.input', side_effect=['1', '85'])
+    @patch('builtins.print')
+    def test_single_student(self, mock_print, mock_input):
+        main_program.main()
+        mock_print.assert_called_with('The class average is: 85.00')
+        self.assertIn(
+            unittest.mock.call('The class average is: 85.00'), 
+            mock_print.mock_calls
+        )
+    
+    
+
     
