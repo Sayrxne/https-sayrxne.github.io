@@ -78,6 +78,9 @@ class TestMainProgram(unittest.TestCase):
             mock_print.mock_calls
         )
     
-    
+
+
+if __name__ == '__main__':
+    unittest.main()
 
     
