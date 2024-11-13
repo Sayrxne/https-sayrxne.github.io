@@ -17,17 +17,17 @@ def main():
     for i in range(num_students):
         while True:
             try:
-                grade = float(input(f"Enter grade for student {i+1} (0-100): "))
+                grade = float(input(f"Enter the grade for student {i+1}: "))
                 if 0 <= grade <= 100:
-                    total_sum += grade
+                    grades.append(grade)
                     break
                 else:
-                    print("Please enter a grade between 0 and 100.")
+                    print("Grade must be between 0 and 100. Try again.")
             except ValueError:
-                print("Invalid input. Please enter a valid number.")
+                print("Invalid input. Please enter a valid grade between 0 and 100.")
 
-    # Step 3: Calculate average
-    average = total_sum / num_students 
+    # Step 3: Calculate the average grade
+    average = sum(grades) / len(grades)
     
     print(f"The class average is: {average:.2f}")
 
