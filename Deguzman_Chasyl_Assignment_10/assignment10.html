@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Handmade Miniature Mouse</h1>
+        <div class="card mx-auto" style="max-width: 400px;">
+            <img src="https://camphollow.com/cdn/shop/products/image0_24_large.jpg?v=1675798817" class="card-img-top" alt="Product Image">
+            <div class="card-body text-center">
+                <h5 class="card-title">Penny</h5>
+                <p class="card-text">Price: $9.99</p>
+                <button class="btn btn-primary" id="orderButton">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("orderButton").addEventListener("click", function () {
+            let quantity = prompt("How many orders would you like to add to the shopping cart?");
+            if (quantity && !isNaN(quantity) && quantity > 0) {
+                let totalPrice = (quantity * 9.99).toFixed(2);
+                alert(`${quantity} orders have been received! The total price is $${totalPrice}`);
+            } else {
+                alert("Please enter a valid number for the quantity.");
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
