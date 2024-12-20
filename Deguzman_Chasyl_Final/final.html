@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Exam Answer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+</head>
+<body>
+    <p><b>Name: </b>Chasyl De Guzman</p>
+    <p><b>Email: </b>chasyl.deguzman13<i>@</i>student.qcc.cuny.edu</p>
+
+    <p><b>1. D</b></p>
+    <p><b>2. A</b></p>
+    <p><b>3. C</b></p>
+    <p><b>4. A and E</b></p>
+    <p><b>5. B, C, and D</b></p>
+    <p><b>6. A, B, and D</b></p>
+    <p><b>7. B</b></p>
+    <p><b>8. B and C</b></p>
+    <p><b>9. C</b></p>
+    <p><b>10. B</b></p>
+   
+    <p><b>11.</b></p>
+    <!-- Navbar with burger button -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Studio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Tab 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tab 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tab 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tab 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="position-relative text-center">
+        <img src="images/nyc.jfif" class="img-fluid" alt="New York City">
+        <div class="position-absolute top-50 start-50 translate-middle bg-light p-3 shadow">
+            <h1 class="text-dark">New York City</h1>
+            <a href="#" class="btn btn-primary">Explore Events</a>
+        </div>
+    </div>
+
+    <p><b>12.</b></p>
+    <style>
+        .container1 {
+            width: 100%;
+            height: 300px;
+            border: 3px solid limegreen;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .basketball {
+            width: 100px;
+            height: 100px;
+            background-image: url('images/Image20241219190030.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            animation: moveAndTransform 3s infinite ease-in-out;
+        }
+    
+        @keyframes moveAndTransform {
+            0% {
+                top: 0;
+                right: 0;
+                background-image: url('images/Image20241219190030.png');
+                transform: scale(1);
+            }
+            50% {
+                top: 150px;
+                right: 150px;
+                transform: scale(1.2);
+            }
+            100% {
+                top: 300px;
+                right: calc(100% - 100px);
+                background-image: url('images/football.jfif');
+                transform: scale(1);
+            }
+        }
+    </style>
+    
+    <div class="container1">
+        <div class="basketball"></div>
+    </div>
+
+    <p><b>13.</b></p>
+    <style>
+        .container2 {
+            height: 600px;
+            position: relative;
+            border: 2px dashed lightgray;
+        }
+
+        .card1 {
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.1);
+        }
+
+        .card-1 {
+            top: 50px;
+            left: 20px;
+        }
+
+        .card-2 {
+            top: 200px;
+            left: 150px;
+        }
+
+        .card-3 {
+            top: 100px;
+            right: 20px;
+        }
+    </style>
+
+    <div class="container2 my-5">
+      <!-- Card 1 -->
+      <div class="card1 shadow card-1" style="border: 2px solid pink; width: 150px;">
+         <img src="images/Image20241219190030.png" class="card-img-top" alt="Basketball 1">
+         <div class="card-body text-center">
+             <h5 class="card-title">Basketball</h5>
+             <button class="btn" style="background-color: pink; color: white; border: none;">View More</button>
+         </div>
+        </div>
+    
+       <!-- Card 2 -->
+        <div class="card1 shadow card-2" style="border: 2px solid pink; width: 200px;">
+         <img src="images/football.jfif" class="card-img-top" alt="Football 2">
+         <div class="card-body text-center">
+             <h5 class="card-title">Football</h5>
+             <button class="btn" style="background-color: pink; color: white; border: none;">View More</button>
+         </div>
+        </div>
+        
+    <!-- Card 3 -->
+        <div class="card1 shadow card-3" style="border: 2px solid pink; width: 250px;">
+         <img src="images/Image20241219190030.png" class="card-img-top" alt="Basketball 3">
+         <div class="card-body text-center">
+             <h5 class="card-title">Basketball</h5>
+             <button class="btn" style="background-color: pink; color: white; border: none;">View More</button>
+         </div>
+        </div>
+    </div>
+
+    <p><b>14.</b></p>
+    
+        <div class="container my-4 border border-warning">
+            <div class="row text-center g-4">
+                <!-- 1 -->
+                <div class="col-md-3">
+                    <div class="card border-primary">
+                        <img src="images/football.jfif" class="card-img-top" alt="Football">
+                        <div class="card-body">
+                            <h5 class="card-title">Football</h5>
+                            <p class="card-text">Oval shaped and usually are brown</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#product1Modal">chec more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col-md-3">
+                    <div class="card border-danger">
+                        <img src="images/Image20241219190030.png" class="card-img-top" alt="Basketball">
+                        <div class="card-body">
+                            <h5 class="card-title">Basketball</h5>
+                            <p class="card-text">Round and comes in different colors </p>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#product2Modal">check more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-md-3">
+                    <div class="card border-primary">
+                        <img src="images/football.jfif" class="card-img-top" alt="Football">
+                        <div class="card-body">
+                            <h5 class="card-title">Football</h5>
+                            <p class="card-text">Oval shaped and usually are brown</p>
+                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#product3Modal">check mor</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col-md-3">
+                    <div class="card border-danger">
+                        <img src="images/Image20241219190030.png" class="card-img-top" alt="Basketball">
+                        <div class="card-body">
+                            <h5 class="card-title">Basketball</h5>
+                            <p class="card-text">Round and comes in different colors</p>
+                            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#product4Modal">check more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modals -->
+        <!-- 1 -->
+        <div class="modal fade" id="product1Modal" tabindex="-1" aria-labelledby="product1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product1ModalLabel">Football</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        they are not really shaped like balls!
+                        <img src="images/football.jfif" class="card-img-top" alt="Football">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="modal fade" id="product2Modal" tabindex="-1" aria-labelledby="product2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product2ModalLabel">Basketball</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        they were not always orange!
+                        <img src="images/Image20241219190030.png" class="card-img-top" alt="Basketball">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="modal fade" id="product3Modal" tabindex="-1" aria-labelledby="product3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product3ModalLabel">Football</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        footballs have tiny dimples, just like a golf ball!
+                        <img src="images/football.jfif" class="card-img-top" alt="Football">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="modal fade" id="product4Modal" tabindex="-1" aria-labelledby="product4ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="product4ModalLabel">Basketball</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I ran out of things to say!
+                        <img src="images/Image20241219190030.png" class="modal-img-top" alt="Basketball">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
